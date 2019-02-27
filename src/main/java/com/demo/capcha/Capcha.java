@@ -38,8 +38,22 @@ public class Capcha {
         this.rightOperand = rightOperand;
     }
 
+
+
+
     @Override
     public String toString() {
+        if(this.getRightOperand()==1){
+
+            return String.format("%s %s %s",leftOperand, "+","One");
+        }
+        else if(this.getRightOperand()==2){
+            return String.format("%s %s %s",leftOperand, "+","Two");
+        }
+        else if(this.getRightOperand()==3){
+            return String.format("%s %s %s",leftOperand, "+","Three");
+        }
+
         return String.format("%s %s %s",leftOperand, "+","One");
 
 
