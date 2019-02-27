@@ -40,10 +40,8 @@ public class Capcha {
 
     @Override
     public String toString() {
-        if(this.leftOperand == 2 ){
-            return "2 + One";
-        }
-        return "1 + One";
+        return String.format("%s %s %s",leftOperand, "+","One");
+
 
     }
 

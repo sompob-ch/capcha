@@ -17,5 +17,10 @@ public class capchaTest {
         Assert.assertEquals("2 + One",capcha.toString());
 
     }
+    @Test
+    public void firstPattenLeftOperanShouldBe3(){
+        Capcha capcha = new Capcha(1,3,1,1);
+        Assert.assertEquals("3 + One",capcha.toString());
+    }
 
 }
